@@ -37,8 +37,12 @@ function showGrid(type) {
   
   gridData[type].forEach(item => {
     const gridItem = document.createElement('div');
-    gridItem.className = 'grid-item';
-    gridItem.innerHTML = `<h3>${item.name}</h3>`;
+    gridItem.className = 'grid-item overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group';
+    gridItem.innerHTML = `<div class="h-2 bg-blue-500 shadow-purple-200"></div>
+    <div class="p-6 mx-auto">
+    <h3 class="text-xl font-bold text-slate-800 mb-2">${item.name}</h3>
+    </div>
+    `;
     
     // Style dinamis
     // gridItem.style.backgroundColor = item.color;

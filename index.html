@@ -1,26 +1,38 @@
 <html>
     <head>
         <title></title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <select id="dynamic-select">
-            <option value="">Pilih Kebutuhan Anda:</option>
-            <option value="url:https://www.podomoropark.com/id/cluster/brahmapuri">Kemewahan Yang Tetap Terjangkau</option>
-            <option value="url:https://www.podomoropark.com/id/cluster/patragriya">Rumah Harga < 1 Miliar</option>
-            <option value="grid:sultan">Rumah Harga > 1 Miliar</option>
-            <option value="url:https://www.podomoropark.com/id/cluster/brahmapuri">Rumah Pinggir Danau</option>
-            <option value="url:https://www.podomoropark.com/id/cluster/naragriya">Rumah Kost</option>
-            <option value="url:https://www.podomoropark.com/id/cluster/dharmapuri">Lahan Siap Bangun</option>
-            <option value="grid:ruko">Ruko</option>
-            <option value="url:https://www.podomoropark.com/id/commercial">Area Komersial</option>
-            <option value="url:https://www.podomoropark.com/id/facilities">Fasilitas</option>
-            <option value="url:https://www.podomoropark.com/id/article/news">Berita & Acara</option>
-        </select>
-        <button id="go">Lanjut</button>
-        <!-- Container grid (hidden awal) -->
-        <div id="grid-container" class="hidden">
-            <div class="grid"></div>
+        <div class="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 p-4 md:p-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="mb-8">
+                    <h1 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Frequently Asked Question (FAQ)</h1>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <div class="relative flex-1">
+                            <select id="dynamic-select" class="w-full bg-white border-slate-200 shadow-sm h-12 pl-4 pr-8 rounded-lg">
+                                <option value="">Pilih Kebutuhan Anda:</option>
+                                <option value="url:https://www.podomoropark.com/id/cluster/brahmapuri">Kemewahan Yang Tetap Terjangkau</option>
+                                <option value="url:https://www.podomoropark.com/id/cluster/patragriya">Rumah Harga < 1 Miliar</option>
+                                <option value="grid:sultan">Rumah Harga > 1 Miliar</option>
+                                <option value="url:https://www.podomoropark.com/id/cluster/brahmapuri">Rumah Pinggir Danau</option>
+                                <option value="url:https://www.podomoropark.com/id/cluster/naragriya">Rumah Kost</option>
+                                <option value="url:https://www.podomoropark.com/id/cluster/dharmapuri">Lahan Siap Bangun</option>
+                                <option value="grid:ruko">Ruko</option>
+                                <option value="url:https://www.podomoropark.com/id/commercial">Area Komersial</option>
+                                <option value="url:https://www.podomoropark.com/id/facilities">Fasilitas</option>
+                                <option value="url:https://www.podomoropark.com/id/article/news">Berita & Acara</option>
+                            </select>
+                        </div>
+                        <button id="go" class="h-12 px-6 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg shadow-md transition-all duration-200 hover:shadow-lg">Lanjut</button>
+                    </div>
+                </div>
+                <!-- Container grid (hidden awal) -->
+                <div id="grid-container" class="hidden">
+                    <div class="grid gap-4"></div>
+                </div>
+            </div>
         </div>
         <script src="app.js"></script>
     </body>
