@@ -1,13 +1,14 @@
 const gridData = {
     sultan: [
-        { name: "Fashagriya", url: "https://www.podomoropark.com/id/cluster/fashagriya" }, 
-        { name: "Wangsagriya", url: "https://www.podomoropark.com/id/cluster/wangsagriya" },
-        { name: "Padmagriya", url: "https://www.podomoropark.com/id/cluster/padmagriya" },
-        { name: "Sadyagriya", url: "https://www.podomoropark.com/id/cluster/sadyagriya" }
+        { name: "Fashagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/fashagriya", img: "/src/img/fashagriya.png" }, 
+        { name: "Wangsagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/wangsagriya", img: "/src/img/wangsagriya.png" },
+        { name: "Padmagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/padmagriya", img: "/src/img/padmagriya.png" },
+        { name: "Sadyagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/sadyagriya", img: "/src/img/sadyagriya.png" }
     ],
-    ruko: [
-        { name: "Neo Plaza", url: "https://www.podomoropark.com/id/ruko" },
-        { name: "La Plaza", url: "https://www.podomoropark.com/id/laplaza" }
+    investasi: [
+        { name: "Neo Plaza", url: "https://www.podomoropark.com/id/ruko", img: "/src/img/neoplaza.png" },
+        { name: "La Plaza", url: "https://www.podomoropark.com/id/laplaza", img: "/src/img/laplaza.png" },
+        { name: "Student House", url: "https://www.podomoropark.com/id/cluster/naragriya", img: "/src/img/studenthouse.png" }
     ]
 };
 document.getElementById('go').addEventListener('click', () => {
@@ -31,17 +32,26 @@ document.getElementById('go').addEventListener('click', () => {
 // Fungsi tampilkan grid
 function showGrid(type) {
   const gridContainer = document.getElementById('grid-container');
-  const grid = document.querySelector('.grid');
+  const grid = document.querySelector('.flex-wrap');
   
   grid.innerHTML = ''; // Kosongkan grid sebelumnya
   
   gridData[type].forEach(item => {
     const gridItem = document.createElement('div');
-    gridItem.className = 'grid-item overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group';
-    gridItem.innerHTML = `<div class="h-2 bg-blue-500 shadow-purple-200"></div>
-    <div class="p-6 mx-auto h-32">
-    <h3 class="text-xl font-bold text-slate-800 mb-2">${item.name}</h3>
-    </div>
+    gridItem.className = 'w-full md:w-[calc(50%-12px)] max-w-md';
+    gridItem.innerHTML = `
+    <div class="rounded-xl overflow-hidden flex shadow-lg">
+            <div class="bg-gradient-to-t from-[#308377] to-[#286E63] text-white p-6 flex flex-col justify-center min-w-[180px]">
+              <h3 class="text-xl font-bold">${item.name}</h3>
+            </div>
+            <div class="flex-grow h-[110px]">
+              <img
+                src="${item.img}"
+                alt="${item.name}"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
     `;
     
     // Style dinamis

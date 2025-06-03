@@ -7,28 +7,29 @@
             id: {
                 selectPlaceholder: "Pilih Kebutuhan Anda:",
                 options: [
-                    { text: "Kemewahan Yang Tetap Terjangkau", value: "url:https://www.podomoropark.com/id/cluster/brahmapuri" },
-                    { text: "Rumah Harga < 1 Miliar", value: "url:https://www.podomoropark.com/id/cluster/patragriya" },
-                    { text: "Rumah Harga > 1 Miliar", value: "grid:sultan" },
+                    { text: "Kemewahan Yang Terjangkau", value: "url:https://www.podomoropark.com/id/cluster/brahmapuri" },
+                    { text: "Rumah Harga < 1 Milliar", value: "url:https://www.podomoropark.com/id/cluster/patragriya" },
+                    { text: "Rumah Harga > 1 Milliar", value: "grid:sultan" },
                     { text: "Rumah Pinggir Danau", value: "url:https://www.podomoropark.com/id/cluster/brahmapuri" },
-                    { text: "Rumah Kost", value: "url:https://www.podomoropark.com/id/cluster/naragriya" },
+                    // { text: "Rumah Kost", value: "url:https://www.podomoropark.com/id/cluster/naragriya" },
                     { text: "Lahan Siap Bangun", value: "url:https://www.podomoropark.com/id/cluster/dharmapuri" },
-                    { text: "Ruko", value: "grid:ruko" },
-                    { text: "Area Komersial", value: "url:https://www.podomoropark.com/id/commercial" },
+                    { text: "Pilihan Investasi", value: "grid:investasi" },
+                    { text: "Lahan Komersial", value: "url:https://www.podomoropark.com/id/commercial" },
                     { text: "Fasilitas", value: "url:https://www.podomoropark.com/id/facilities" },
                     { text: "Berita & Acara", value: "url:https://www.podomoropark.com/id/article/news" }
                 ],
                 buttonText: "Lanjut",
                 gridItems: {
                     sultan: [
-                        { name: "Fashagriya", url: "https://www.podomoropark.com/id/cluster/fashagriya" }, 
-                        { name: "Wangsagriya", url: "https://www.podomoropark.com/id/cluster/wangsagriya" },
-                        { name: "Padmagriya", url: "https://www.podomoropark.com/id/cluster/padmagriya" },
-                        { name: "Sadyagriya", url: "https://www.podomoropark.com/id/cluster/sadyagriya" }
+                        { name: "Fashagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/fashagriya", img: "/src/img/fashagriya.png" }, 
+                        { name: "Wangsagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/wangsagriya", img: "/src/img/wangsagriya.png" },
+                        { name: "Padmagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/padmagriya", img: "/src/img/padmagriya.png" },
+                        { name: "Sadyagriya<br> Cluster", url: "https://www.podomoropark.com/id/cluster/sadyagriya", img: "/src/img/sadyagriya.png" }
                     ],
-                    ruko: [
-                        { name: "Neo Plaza", url: "https://www.podomoropark.com/id/ruko" },
-                        { name: "La Plaza", url: "https://www.podomoropark.com/id/laplaza" }
+                    investasi: [
+                        { name: "Neo Plaza", url: "https://www.podomoropark.com/id/ruko", img: "/src/img/neoplaza.png" },
+                        { name: "La Plaza", url: "https://www.podomoropark.com/id/laplaza", img: "/src/img/laplaza.png" },
+                        { name: "Student<br> House", url: "https://www.podomoropark.com/id/cluster/naragriya", img: "/src/img/studenthouse.png" }
                     ]
                 }
             },
@@ -39,9 +40,9 @@
                     { text: "Homes < 1 Billion", value: "url:https://www.podomoropark.com/en/cluster/patragriya" },
                     { text: "Homes > 1 Billion", value: "grid:sultan" },
                     { text: "Lakeside Homes", value: "url:https://www.podomoropark.com/en/cluster/brahmapuri" },
-                    { text: "Student House", value: "url:https://www.podomoropark.com/en/cluster/naragriya" },
+                    // { text: "Student House", value: "url:https://www.podomoropark.com/en/cluster/naragriya" },
                     { text: "Ready to Build Lot", value: "url:https://www.podomoropark.com/en/cluster/dharmapuri" },
-                    { text: "Shophouse", value: "grid:ruko" },
+                    { text: "Investment Choices", value: "grid:investasi" },
                     { text: "Commercial Area", value: "url:https://www.podomoropark.com/en/commercial" },
                     { text: "Facilities", value: "url:https://www.podomoropark.com/en/facilities" },
                     { text: "News & Events", value: "url:https://www.podomoropark.com/en/article/news" }
@@ -49,14 +50,15 @@
                 buttonText: "Go",
                 gridItems: {
                     sultan: [
-                        { name: "Fashagriya", url: "https://www.podomoropark.com/en/cluster/fashagriya" }, 
-                        { name: "Wangsagriya", url: "https://www.podomoropark.com/en/cluster/wangsagriya" },
-                        { name: "Padmagriya", url: "https://www.podomoropark.com/en/cluster/padmagriya" },
-                        { name: "Sadyagriya", url: "https://www.podomoropark.com/en/cluster/sadyagriya" }
+                        { name: "Fashagriya<br> Cluster", url: "https://www.podomoropark.com/en/cluster/fashagriya", img: "/src/img/fashagriya.png" }, 
+                        { name: "Wangsagriya<br> Cluster", url: "https://www.podomoropark.com/en/cluster/wangsagriya", img: "/src/img/wangsagriya.png" },
+                        { name: "Padmagriya<br> Cluster", url: "https://www.podomoropark.com/en/cluster/padmagriya", img: "/src/img/padmagriya.png" },
+                        { name: "Sadyagriya<br> Cluster", url: "https://www.podomoropark.com/en/cluster/sadyagriya", img: "/src/img/sadyagriya.png" }
                     ],
-                    ruko: [
-                        { name: "Neo Plaza", url: "https://www.podomoropark.com/en/ruko" },
-                        { name: "La Plaza", url: "https://www.podomoropark.com/en/laplaza" }
+                    investasi: [
+                        { name: "Neo Plaza", url: "https://www.podomoropark.com/en/ruko", img: "/src/img/neoplaza.png" },
+                        { name: "La Plaza", url: "https://www.podomoropark.com/en/laplaza", img: "/src/img/laplaza.png" },
+                        { name: "Student<br> House", url: "https://www.podomoropark.com/en/cluster/naragriya", img: "/src/img/studenthouse.png" }
                     ]
                 }
             }
@@ -90,10 +92,19 @@
             const langData = translations[currentLanguage];
             
             try {
+
+
+                // Tambahkan link font ke Shadow DOM
+                const fontLink = document.createElement('link');
+                fontLink.rel = 'stylesheet';
+                fontLink.href = 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap';
+                shadowRoot.appendChild(fontLink);
+
                 // Tambahkan Tailwind CSS yang sudah dibuild
                 const tailwindCSS = document.createElement('style');
                 tailwindCSS.textContent = `
-                    /*! tailwindcss v4.1.7 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 @layer properties;
 @layer theme, base, components, utilities;
 @layer theme {
@@ -102,16 +113,24 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-emerald-600: oklch(59.6% 0.145 163.225);
     --color-emerald-700: oklch(50.8% 0.118 165.612);
     --color-blue-500: oklch(62.3% 0.214 259.815);
+    --color-indigo-600: oklch(51.1% 0.262 276.966);
+    --color-violet-600: oklch(54.1% 0.281 293.009);
     --color-purple-200: oklch(90.2% 0.063 306.703);
     --color-slate-50: oklch(98.4% 0.003 247.858);
     --color-slate-100: oklch(96.8% 0.007 247.896);
     --color-slate-200: oklch(92.9% 0.013 255.508);
+    --color-slate-400: oklch(70.4% 0.04 256.788);
     --color-slate-800: oklch(27.9% 0.041 260.031);
+    --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-md: 28rem;
+    --container-lg: 32rem;
+    --container-2xl: 42rem;
     --container-6xl: 72rem;
     --text-xl: 1.25rem;
     --text-xl--line-height: calc(1.75 / 1.25);
@@ -122,10 +141,12 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
+    --font-josefin: "Josefin Sans", sans-serif;
   }
 }
 @layer base {
@@ -277,6 +298,24 @@
   .relative {
     position: relative;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -289,6 +328,9 @@
   .mb-8 {
     margin-bottom: calc(var(--spacing) * 8);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .flex {
     display: flex;
   }
@@ -298,8 +340,14 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-2 {
     height: calc(var(--spacing) * 2);
+  }
+  .h-6 {
+    height: calc(var(--spacing) * 6);
   }
   .h-12 {
     height: calc(var(--spacing) * 12);
@@ -307,26 +355,89 @@
   .h-32 {
     height: calc(var(--spacing) * 32);
   }
+  .h-40 {
+    height: calc(var(--spacing) * 40);
+  }
+  .h-\[110px\] {
+    height: 110px;
+  }
+  .h-\[150px\] {
+    height: 150px;
+  }
+  .h-full {
+    height: 100%;
+  }
   .min-h-screen {
     min-height: 100vh;
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-full {
     width: 100%;
   }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
   .max-w-6xl {
     max-width: var(--container-6xl);
+  }
+  .max-w-40 {
+    max-width: calc(var(--spacing) * 40);
+  }
+  .max-w-80 {
+    max-width: calc(var(--spacing) * 80);
+  }
+  .max-w-\[160px\] {
+    max-width: 160px;
+  }
+  .max-w-lg {
+    max-width: var(--container-lg);
+  }
+  .max-w-md {
+    max-width: var(--container-md);
+  }
+  .min-w-\[160px\] {
+    min-width: 160px;
+  }
+  .min-w-\[170px\] {
+    min-width: 170px;
+  }
+  .min-w-\[180px\] {
+    min-width: 180px;
   }
   .flex-1 {
     flex: 1;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
+  }
+  .appearance-none {
+    appearance: none;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-row {
     flex-direction: row;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .justify-center {
+    justify-content: center;
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
@@ -337,11 +448,21 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-6 {
+    gap: calc(var(--spacing) * 6);
+  }
   .overflow-hidden {
     overflow: hidden;
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-0 {
     border-style: var(--tw-border-style);
@@ -350,26 +471,96 @@
   .border-slate-200 {
     border-color: var(--color-slate-200);
   }
+  .bg-\[\#1a7a5d\] {
+    background-color: #1a7a5d;
+  }
+  .bg-\[\#08594c\] {
+    background-color: #08594c;
+  }
+  .bg-\[\#eceef0\] {
+    background-color: #eceef0;
+  }
+  .bg-\[08594c\] {
+    background-color: 08594c;
+  }
   .bg-blue-500 {
     background-color: var(--color-blue-500);
   }
   .bg-emerald-600 {
     background-color: var(--color-emerald-600);
   }
+  .bg-slate-50 {
+    background-color: var(--color-slate-50);
+  }
+  .bg-slate-100 {
+    background-color: var(--color-slate-100);
+  }
+  .bg-slate-400 {
+    background-color: var(--color-slate-400);
+  }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .bg-linear-to-t {
+    --tw-gradient-position: to top;
+    @supports (background-image: linear-gradient(in lab, red, red)) {
+      --tw-gradient-position: to top in oklab;
+    }
+    background-image: linear-gradient(var(--tw-gradient-stops));
   }
   .bg-gradient-to-b {
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-gradient-to-t {
+    --tw-gradient-position: to top in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .from-\[\#308377\] {
+    --tw-gradient-from: #308377;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-\[\#F7F8F9\] {
+    --tw-gradient-from: #F7F8F9;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .from-slate-50 {
     --tw-gradient-from: var(--color-slate-50);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .from-violet-600 {
+    --tw-gradient-from: var(--color-violet-600);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#286E63\] {
+    --tw-gradient-to: #286E63;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#1365b8\] {
+    --tw-gradient-to: #1365b8;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-\[\#ECEEF0\] {
+    --tw-gradient-to: #ECEEF0;
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-indigo-600 {
+    --tw-gradient-to: var(--color-indigo-600);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .to-slate-100 {
     --tw-gradient-to: var(--color-slate-100);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-slate-200 {
+    --tw-gradient-to: var(--color-slate-200);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-contain {
+    object-fit: contain;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-4 {
     padding: calc(var(--spacing) * 4);
@@ -385,6 +576,9 @@
   }
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
+  }
+  .font-josefin {
+    font-family: var(--font-josefin);
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -405,11 +599,21 @@
   .text-blue-500 {
     color: var(--color-blue-500);
   }
+  .text-gray-800 {
+    color: var(--color-gray-800);
+  }
   .text-slate-800 {
     color: var(--color-slate-800);
   }
   .text-white {
     color: var(--color-white);
+  }
+  .underline {
+    text-decoration-line: underline;
+  }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .shadow-lg {
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
@@ -429,6 +633,15 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-purple-200) var(--tw-shadow-alpha), transparent);
     }
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
+  .transition {
+    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -441,6 +654,13 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
+  }
+  .hover\:bg-amber-300 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-amber-300);
+      }
+    }
   }
   .hover\:bg-emerald-700 {
     &:hover {
@@ -465,9 +685,19 @@
       }
     }
   }
+  .focus\:ring-\[\#08594c\] {
+    &:focus {
+      --tw-ring-color: #08594c;
+    }
+  }
   .sm\:grid-cols-2 {
     @media (width >= 40rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .md\:w-\[calc\(50\%-12px\)\] {
+    @media (width >= 48rem) {
+      width: calc(50% - 12px);
     }
   }
   .md\:gap-6 {
@@ -489,6 +719,11 @@
   .lg\:grid-cols-2 {
     @media (width >= 64rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .dark\:text-white {
+    @media (prefers-color-scheme: dark) {
+      color: var(--color-white);
     }
   }
 }
@@ -628,6 +863,11 @@
   inherits: false;
   initial-value: 0 0 #0000;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -665,14 +905,14 @@
       --tw-ring-offset-width: 0px;
       --tw-ring-offset-color: #fff;
       --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
 }
-
                 `;
                 
-                // Memuat CSS Flowbite
+                // // Memuat CSS Flowbite
                 const flowbiteCSS = await loadCSS('https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css');
                 
                 // Tambahkan CSS kustom
@@ -707,22 +947,26 @@
                 
                 // Tambahkan HTML ke Shadow DOM
                 shadowRoot.innerHTML = `
-                    <div class="bg-gradient-to-b from-slate-50 to-slate-100 p-4 md:p-8">
+                    <div class="font-josefin p-4 md:p-8">
                         <div class="max-w-6xl mx-auto">
                             <div class="mb-8">
                                 <div class="flex flex-row gap-3">
                                     <div class="relative flex-1">
-                                        <select id="dynamic-select" class="w-full bg-white border-slate-200 shadow-sm h-12 pl-4 pr-8 rounded-lg">
+                                        <select id="dynamic-select" class="appearance-none bg-emerald-700 w-full border-slate-200 focus:ring-[#08594c] shadow-lg h-12 pl-4 pr-8 rounded-lg">
                                             <option value="">${langData.selectPlaceholder}</option>
                                             ${selectOptions}
                                         </select>
                                     </div>
-                                    <button id="go" class="h-12 px-6 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg shadow-md transition-all duration-200 hover:shadow-lg font-medium">${langData.buttonText}</button>
+                                    <button id="go" class="h-12 px-6 bg-[#08594c] hover:bg-emerald-700 text-white rounded-lg shadow-lg transition-all duration-200 hover:shadow-lg font-medium">
+                                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/>
+                                        </svg>
+                                    </button>
                                 </div>
                             </div>
                             <!-- Container grid (hidden awal) -->
                             <div id="grid-container" class="hidden mx-auto">
-                                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-6"></div>
+                                <div class="flex flex-wrap justify-center gap-6 mb-16"></div>
                             </div>
                         </div>
                     </div>
@@ -781,17 +1025,25 @@
             
             function showGrid(type, lang) {
                 const gridContainer = shadowRoot.getElementById('grid-container');
-                const grid = shadowRoot.querySelector('.grid');
+                const grid = shadowRoot.querySelector('.flex-wrap');
                 
                 grid.innerHTML = '';
                 
                 translations[lang].gridItems[type].forEach(item => {
                     const gridItem = document.createElement('div');
-                    gridItem.className = 'grid-item overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 group';
-                    gridItem.innerHTML = `<div class="h-2 bg-blue-500 shadow-purple-200"></div>
-                    <div class="p-6 mx-auto h-32">
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">${item.name}</h3>
-                    </div>
+                    gridItem.className = 'w-full md:w-[calc(50%-12px)] max-w-md';
+                    gridItem.innerHTML = `<div class="rounded-xl overflow-hidden flex shadow-lg">
+            <div class="bg-gradient-to-t from-[#308377] to-[#286E63] text-white p-6 flex flex-col justify-center min-w-[180px]">
+              <h3 class="text-xl font-bold">${item.name}</h3>
+            </div>
+            <div class="flex-grow h-[110px]">
+              <img
+                src="${item.img}"
+                alt="${item.name}"
+                class="w-full h-full object-cover"
+              />
+            </div>
+          </div>
                     `;
                     
                     gridItem.style.cursor = 'pointer';
